@@ -34,4 +34,21 @@
 <p> <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSeCvfcoetB60hRkGb7dgFKDd3aPKzsx8coTMXNCoPA2DXaxjw/viewform?usp=sf_link" >ici </a> </p>
 </main>
 
+<button onclick="promptPassword()">POUR LES VIP</button>
+<p id="protectedLink" style="display:none">
+  <a href="https://fr.pornhub.com/view_video.php?viewkey=ph63b9ac36ad433">Lien protégé</a>
+</p>
+
+<script>
+  function promptPassword() {
+    var password = prompt("Entrez le mot de passe :");
+    if (password === "secret") {
+      document.getElementById("protectedLink").style.display = "block";
+    } else {
+      alert("Mot de passe incorrect.");
+    }
+  }
+</script>
+
+
 </html>
